@@ -1,5 +1,5 @@
 config:
-  azure-native:location: canadacentral
+  azure-native:location: westus
   cst8918-a03-infra:appPath: ../
   cst8918-a03-infra:containerPort: '80'
   cst8918-a03-infra:publicPort: '80'
@@ -7,3 +7,6 @@ config:
   cst8918-a03-infra:memory: '2'
   cst8918-a03-infra:prefixName: 'cst8918a03mous0229'
   cst8918-a03-infra:imageTag: 'v0.2.0'
+  cst8918-a03-infra:weatherApiKey:
+    secure: v1:Co5TJGh864NrgY2x:U3oY5OZJdhnmruM7atOzB4z6HxhQ9xOsogJoYFvk2RO6ICIQmIh9mU3uaGa7x6V+
+encryptionsalt: v1:1CIpIbjGm7M=:v1:T3URuOBS5augsQFM:DCRbu4aKeFk00S9DC/vvtA9X0NGEFA==

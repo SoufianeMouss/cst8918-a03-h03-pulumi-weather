@@ -19,6 +19,8 @@ const memory = config.requireNumber('memory')
 // Create a resource group.
 const resourceGroup = new resources.ResourceGroup(`${prefixName}-rg`)
 
+
+
 // Create the container registry.
 const registry = new containerregistry.Registry(`${prefixName}ACR`, {
   resourceGroupName: resourceGroup.name,
@@ -88,8 +90,8 @@ const containerGroup = new containerinstance.ContainerGroup(
             value: containerPort.toString(),
           },
           {
-            name: 'WEATHER_API_KEY',
-            value: '2b0a89dfd0ff263f9e94a20b2152d621',
+            name: "WEATHER_API_KEY",
+            value: config.requireSecret("weatherApiKey"),
           },
         ],
         resources: {
